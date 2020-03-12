@@ -22,7 +22,7 @@ def get_info_from_one_park():
         print (park)
     
 def get_alerts_from_smokey_mountains():
-    # Great Smokey Mountains code is grsm
+    # Great Smokey Mountains code is grsm and Yosemite is yose
     response = requests.get('https://developer.nps.gov/api/v1/alerts?parkCode=yose&api_key=pfJKDXPzTykVL73ehnPyY8pkDQLjfq5cz5LqCkl3')
     json_string = response.content
     parsed_json = json.loads(json_string)   # Now we have a python dictionary
