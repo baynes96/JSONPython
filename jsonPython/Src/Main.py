@@ -23,10 +23,11 @@ def get_info_from_one_park():
     
 def get_alerts_from_smokey_mountains():
     # Great Smokey Mountains code is grsm
-    response = requests.get('https://developer.nps.gov/api/v1/alerts?parkCode=grsm&api_key=pfJKDXPzTykVL73ehnPyY8pkDQLjfq5cz5LqCkl3')
+    response = requests.get('https://developer.nps.gov/api/v1/alerts?parkCode=yose&api_key=pfJKDXPzTykVL73ehnPyY8pkDQLjfq5cz5LqCkl3')
     json_string = response.content
     parsed_json = json.loads(json_string)   # Now we have a python dictionary
     total = int(parsed_json['total'])        # The number of alerts that were returned
+    print (str(total) + " " +"alerts returned")
     for alert in parsed_json['data']:
         print (alert)
         print(alert['title'])
@@ -100,5 +101,5 @@ def get_candidates():
 #get_candidates()
 #get_all_artwork_from_smithsonian()
 #college_scorecard()
-#get_alerts_from_smokey_mountains()
+get_alerts_from_smokey_mountains()
 
