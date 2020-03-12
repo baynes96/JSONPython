@@ -2,7 +2,8 @@
 Created on Jan 11, 2020
 
 https://www.nps.gov/subjects/developer/api-documentation.htm
-
+Bill Nicholson
+nicholdw@ucmail.uc.edu
 @author: nicomp
 '''
 import json
@@ -96,7 +97,7 @@ def get_candidates():
 #        print(data['party'])
 
 #get_art_info_from_smithsonian()
-get_candidates()
+#get_candidates()
 #get_all_artwork_from_smithsonian()
 #college_scorecard()
 #get_alerts_from_smokey_mountains()
